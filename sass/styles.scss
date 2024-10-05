@@ -1,0 +1,464 @@
+
+
+
+
+
+@font-face {
+  font-family: m12;
+  src: url(../fonts/m12.TTF);
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 1.2rem; 
+}
+
+* {
+    font-family: "m12", system-ui;
+    text-transform: uppercase;
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+
+}
+
+.s1 {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 18rem; 
+    background-size: cover; 
+    background-position: top; 
+    background-repeat: no-repeat; 
+    position: relative; 
+    overflow: hidden; 
+    z-index: 1; 
+
+    @keyframes backgroundChange {
+        0% {
+            background-image: url('../img/bg/bg1.png'); 
+            transform: translateX(0); 
+        }
+        33% {
+            background-image: url('../img/bg/bg1.png'); 
+            transform: translateX(0); 
+        }
+        33.1% {
+            transform: translateX(-100%); 
+        }
+        34% {
+            background-image: url('../img/bg/bg2.png'); 
+            transform: translateX(0); 
+        }
+        66% {
+            background-image: url('../img/bg/bg2.png'); 
+            transform: translateX(0); 
+        }
+        66.1% {
+            transform: translateX(-100%); 
+        }
+        67% {
+            background-image: url('../img/bg/bg3.png');
+            transform: translateX(0); 
+        }
+        99% {
+            background-image: url('../img/bg/bg3.png'); 
+            transform: translateX(0); 
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    animation: backgroundChange 16s infinite; 
+}
+
+
+.navbar {
+    position: relative; 
+    z-index: 2; 
+}
+
+
+.s2 {
+    padding-top: 3rem;
+    
+  
+    h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2rem;
+      color: rgb(255, 255, 255);
+      font-family: "Archivo Black", sans-serif;
+      font-weight: 800;
+      font-style: normal;
+      letter-spacing: 2px;
+    }
+  
+    .news {
+      padding: 1rem;
+  
+      .newsimg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+  
+      img {
+        width: 100%;
+        max-width: 37.5rem;
+        height: auto;
+        transition: transform 5s ease-in-out;
+        transform-origin: center;
+        animation: zoom 10s infinite alternate;
+        padding-top: 1.3rem;
+      }
+    }
+  
+    @keyframes zoom {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.2);
+      }
+    }
+  
+    .newstitle {
+      padding: 1.5rem 0 6rem 0;
+  
+      h2 {
+        color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        letter-spacing: 1.5px;
+        line-height: 1;
+        font-size: 1.3rem;
+      }
+  
+      a {
+        position: relative;
+        color: rgb(16, 197, 16);
+        font-size: 0.6rem;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        text-transform: none;
+        text-decoration: none;
+  
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: -2px;
+          width: 100%;
+          height: 2px;
+          background-color: rgb(16, 197, 16);
+          transition: all 0.3s ease;
+        }
+  
+        &:hover::after {
+          width: 0;
+          right: 100%;
+        }
+      }
+    }
+  
+    .buttoncontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        
+      
+        .button {
+
+            font-family: "Archivo Black", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+
+
+          position: relative;
+          display: inline-block;
+          padding: 0.8rem 1.5rem;
+          background-color: transparent; 
+          color: #808080; 
+          border: 2px solid #808080;  
+          cursor: pointer;
+          text-decoration: none;
+          transition: color 0.3s ease, border-color 0.3s ease;  
+          
+      
+          &:hover {
+            color: #fff;
+            border-color: #fff;  
+          }
+      
+  
+          &:active {
+            transform: scale(0.95);  
+          }
+        }
+      }
+      
+
+      
+
+      
+
+  }
+
+
+  
+  footer {
+    padding: 8rem 1rem;
+    h3 {
+      font-size: .8rem;
+      letter-spacing: 2px;
+      font-family: "Archivo Black", sans-serif;
+      color: white; 
+    }
+
+    h4 {
+      display: flex;
+      justify-content: center;
+      padding-top: 5rem;
+      color: #808080;
+      font-size: .5rem;
+      font-family: "Press Start 2P", system-ui;
+    }
+
+
+    .mainmenu {
+      a {
+        text-transform: none;
+        font-family: "Archivo", sans-serif;
+        font-size: .7rem;
+        display: block; 
+        color: #cccccc; 
+        text-decoration: none; 
+        margin-bottom: 0.4rem; 
+        transition: color 0.3s ease; 
+  
+        &:hover {
+          color: white; 
+        }
+      }
+    }
+
+    .about {
+      padding-top: 2.6rem;
+
+      p {
+        text-transform: none;
+        font-family: "Archivo", sans-serif;
+        font-size: .7rem;
+        display: block; 
+        color: #cccccc; 
+        text-decoration: none; 
+      }
+    }
+
+    
+
+    
+  }
+
+ 
+  .s3main {
+    padding-top: 11rem;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;  
+    img {
+      width: 93%;
+      height: auto;
+      padding-bottom: 3rem;
+    }
+  
+    .s3button {
+      .buttoncontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        .button {
+          position: relative;
+          display: inline-block;
+          padding: 0.8rem 1.5rem;
+          background-color: transparent;
+          color: #808080;
+          border: 2px solid #808080;
+          cursor: pointer;
+          text-decoration: none;
+          transition: color 0.3s ease, border-color 0.3s ease;
+  
+          &:hover {
+            color: #fff;
+            border-color: #fff;
+          }
+  
+          &:active {
+            transform: scale(0.95);
+          }
+        }
+      }
+    }
+  }
+  
+  
+
+
+  // ACADEMY
+
+  .s1academy {
+
+    
+    .academy {
+      padding: 0 4rem;
+      display: flex;
+      justify-content: center;
+      img {
+        padding: 4rem;
+        height: 80vh;
+      }
+
+      .academytext {
+        padding: 4rem;
+       p {
+        font-family: "Archivo", sans-serif;
+        color: rgba(255, 255, 255, 0.733);
+        text-transform: none;
+        font-size: .9rem;
+       }
+
+       h1 {
+        font-size: 1rem;
+        color: #ffffff91;
+
+       }
+
+       h2 {
+        color: rgb(255, 255, 255);
+        font-size: 2rem;
+       }
+        
+       h3 {
+        color: white;
+        font-size: 1rem;
+       }
+
+        h1, h2, h3, {
+          text-transform: none;
+          font-family: "Archivo Black", sans-serif;
+        }
+
+        .p1 {
+          padding-top: 1.7rem;
+        }
+        
+      }
+    }
+  }
+
+
+
+
+  //TEAM
+
+  .s1team {
+    text-align: center;
+    padding: 2rem;
+  
+    h1 {
+      font-size: 3rem;
+    }
+  
+    .team1, .team2 {
+
+      .player1, .player2, .player3, .player4, .player5, .player6 {
+        padding-top: 3rem;
+  
+        img {
+          height: 20rem;
+          border: 0.15rem solid #fff;
+          border-radius: 10px;
+        }
+  
+        h2 {
+          font-size: 1.5rem;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+
+
+  //CONTACT
+
+  .s1contact {
+
+    h1 {
+      padding: 1 4rem;
+      display: flex;
+      justify-content: center;
+      font-size: 2rem;
+      font-family: "Archivo Black", sans-serif;
+
+    }
+
+    .socials {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 3rem;
+    
+      a {
+        margin-bottom: .8rem;
+        display: inline-block;
+    
+        img {
+          height: 4rem;
+          padding: .2rem;
+          width: 100%;
+    
+        }
+      }
+    }
+    
+  }
+
+
+  //NEWSROOM
+
+  .s1news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      padding-top: 2rem;
+
+      width: 100%;
+      height: auto;
+    }
+  }
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+@import 'partials/variables';
+@import 'partials/header'; 
+@import 'partials/paymenthform'; 

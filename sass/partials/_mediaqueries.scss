@@ -1,0 +1,281 @@
+@media (min-width: 768px) { //MEDIA QUERY PC
+
+
+
+  // HEADER
+  header {
+    .navbar {
+      padding-left: 2rem;
+
+      .navbar-collapse {
+        position: static;
+        height: auto;
+        left: 0;
+        display: flex ;
+
+        .navbar-nav {
+          flex-direction: row;
+          .nav-item {
+            text-align: left;
+            
+            .nav-link {
+              font-family: "Press Start 2P", system-ui;
+              padding: 10px 15px;
+              font-size: 0.8rem;
+              position: relative;
+              color: #fff;
+              text-decoration: none;
+
+              &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -2px;
+                width: 100%;
+                height: 1.5px;
+                background-color: #3cff00;
+                transform: scaleX(0); 
+                transform-origin: left; 
+                transition: transform 0.3s ease;
+              }
+
+              &:hover::after {
+                transform: scaleX(1); 
+                transform-origin: left; 
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .s1 {
+    height: auto; 
+    width: 100%; 
+    min-height: 85vh; 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+  }
+  
+
+
+  .s2 {
+    padding-top: 10rem ; 
+    
+    h1 {
+      font-size: 3rem ; 
+      text-align: center; 
+      margin-bottom: 2rem; 
+    }
+
+    .news {
+      display: flex; 
+      flex-wrap: wrap;
+      justify-content: space-between; 
+      padding: 0 2rem; 
+      article {
+        flex: 1 1 30%; 
+        margin: 1rem; 
+        overflow: hidden; 
+        text-align: center; 
+
+        .newsimg {
+          img {
+            width: 100%;
+            height: auto; 
+            max-height: 20rem; 
+            transition: transform 5s ease-in-out;
+            animation: zoom 10s infinite alternate;
+          }
+        }
+    }
+        .newstitle {
+          h2 {
+            display: flex;
+            text-align: left;
+            color: rgb(255, 255, 255);
+            font-size: 1.5rem; 
+            line-height: 1.2; 
+            margin-top: 1rem; 
+
+          a {
+            color: rgb(16, 197, 16);
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+
+
+
+  footer {
+    .mainmenu {
+        padding: 2rem;
+        a {
+            font-size: 1.1rem ;
+        }
+    }
+
+    .about {
+        padding: 2rem;
+        width: 40rem;
+        p {
+            font-size: 1.1rem;
+        }
+    }
+
+      .footertext {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10rem;
+
+
+    
+
+  }
+  }
+
+  .s1team {
+    h1 {
+      padding: 2rem;
+      font-size: 3rem;
+    }
+  
+    .team1, .team2 {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  
+      .player1, .player2, .player3, .player4, .player5, .player6 {
+        padding: 1rem;
+        transition: transform 0.3s ease; 
+  
+        img {
+          height: 15rem;
+          transition: transform 0.3s ease; 
+        }
+  
+        &:hover img {
+          transform: scale(1.05); 
+        }
+      }
+    }
+  }
+  
+
+  .s1contact {
+
+    h1 {
+      padding: 3rem 4rem;
+      font-size: 3rem;
+
+
+    }
+
+    .socials {
+      padding-top: 2rem;
+    
+      a {
+        margin-bottom: 1.5rem;
+        display: inline-block;
+    
+        img {
+          height: 4rem;
+          transition: transform 0.3s ease;
+          &:hover {
+            transform: scale(1.05); 
+          }
+        }
+      }
+    }
+    
+  }
+
+  .s1news {
+
+    img {
+  
+      height: 35rem;
+      width: auto;
+  
+    }
+  }
+
+
+}
+
+
+.s3main {
+  img {
+    width: 70%;
+  }
+}
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+  @media (max-width: 1024px) {
+
+    //academy
+    .s1academy {
+      .academy {
+        padding: 0 1rem;
+        flex-direction: column;
+  
+        img {
+          display: none; 
+        }
+  
+        .academytext {
+          padding: 1rem;
+  
+          h1 {
+            font-size: 1.5rem; 
+            color: #ffffff; 
+          }
+  
+          h2 {
+            font-size: 1.2rem; 
+            color: #ffffff;
+          }
+  
+          p {
+            font-size: 1rem; 
+            color: rgba(255, 255, 255, 0.9); 
+          }
+  
+          h3 {
+            font-size: 1rem; 
+            color: #ffffff; 
+          }
+  
+          .p1, .p2, .p3, .p4 {
+            padding-top: 1rem; 
+          }
+        }
+      }
+    }
+  }
+  
+
+  
